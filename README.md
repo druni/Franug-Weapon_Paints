@@ -1,75 +1,36 @@
-# NEW NOTICE! New private version 6.X
+### Tips
+* Use https://gitlab.com/Franc1sco/PRIVATE-WeaponPaints-new2/issues if you found bugs, you have questions, or you want a new feature.
+* Read the rules here: https://github.com/Franc1sco/Franug-PRIVATE-PLUGINS
 
-The new private version have:
-
--Fix console spam errors.
-
--Fixes and optimizations.
-
--Weapon paint attached to his corresponding weapon.
-
--Multilanguage support for all the paints.
-
--Always updated with the new paints.
-
--Methods for prevent bans in your server and you can use it always.
-
--Full support.
-
--Soon much more.
+### Installation:
+* Install required plugin: https://gitlab.com/Franc1sco/Franug-GiveNamedItem (if you dont have access, then send a email to franug13@gmail.com with your gitlab email and paypal account that you use to pay this plugin)
+* Disable "FollowCSGOServerGuidelines" option. In addons/sourcemod/configs/core.cfg write this line in the end ```FollowCSGOServerGuidelines "no"```
+* Dont use your own tokens. Use this website https://csgo.tokenstash.com
+* Unzip file in addons/sourcemod/
+* Add a entry called "weaponpaints" to addons/sourcemod/configs/databases.cfg
+* You dont need to upload the .sp file
+* If you already use a old version. Remove your database content and start since 0
+* A example of a basic databases.cfg is http://pastebin.com/XqsEjPhS
+* If you want a !knife plugin you need to use the private knife version, if you still dont have it, then buy it from me (Franc1sco franug)
 
 
-Interested people contact with http://steamcommunity.com/id/franug (negotiable price). 
-
-You can see all my servers with it here http://bans.cola-team.com/index.php?p=servers
-
-Note: **Be careful with scammers that try to resell false private plugins without support and with virus. Buy plugins always from the original author.**
-
-
-# End of notice.
-
-
-You want to support this plugin? you can with donations using Paypal to my account -> franug13@gmail.com
-https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LWD5V2WBKDQPQ
-
-
-
-Installation:
- 
- 
-Upload .cfg file to addons/sourcemod/configs
-
-Upload .smx file from the zip to addons/sourcemod/plugins
-
-Upload .phrases.txt file to addons/sourcemod/translations
-
-Add a entry called "weaponpaints" to addons/sourcemod/configs/databases.cfg
-
-
-You dont need to upload the .sp file
-
-
-If you already use a old version. Remove your database content and start since 0
-
-
-A example of a basic databases.cfg is http://pastebin.com/XqsEjPhS
-
-
-Cvar (put in server.cfg):
-
+##### Cvars (put in server.cfg)
+```
 sm_weaponpaints_c4 "1" // Enable or disable that people can apply paints to the C4. 1 = enabled, 0 = disabled
-
 sm_weaponpaints_saytimer "10" // Time in seconds for block that show the plugin commands in chat when someone type a command. -1 = never show the commands in chat
-
-sm_weaponpaints_roundtimer "20" // Time in seconds roundstart for can use the commands for change the paints. -1.0 = always can use the command
-
+sm_weaponpaints_roundtimer "-1.0" // Time in seconds roundstart for can use the commands for change the paints. -1.0 = always can use the command
 sm_weaponpaints_rmenu "1" // Re-open the menu when you select a option. 1 = enabled, 0 = disabled.
-
-sm_weaponpaints_onlyadmin "1" // This feature is only for admins. 1 = enabled, 0 = disabled. (Use the value 1 and try to keep this plugin secret for the normal users because they can report it)
-
+sm_weaponpaints_onlyadmin "0" // This feature is only for admins. 1 = enabled, 0 = disabled. (Use the value 1 and try to keep this plugin secret for the normal users because they can report it)
 sm_weaponpaints_zombiesv "1" // Enable this for prevent crashes in zombie and 1v1 servers for knifes. 1 = enabled, 0 = disabled. (Use the value 1 if you use my knife plugin)
+```
+
+### Commands
+```
+sm_ws sm_wskins sm_paints buyammo1 - open the main menu
+sm_reloadwskins - reload cfg (root access)
+sm_wsremove <steamid> - remove a steamid from the DB (root access)
+```
 
 
-
-
-Recommendations: dont advertise the plugin in sv_tags and use it only for admins
+## Follow the rules here: https://github.com/Franc1sco/Franug-PRIVATE-PLUGINS
+## Dont forget to give me +rep in my steam profile ( http://steamcommunity.com/id/franug ) if you like my plugins :)
